@@ -5,10 +5,10 @@ from schema import DatabaseSchema
 
 def getStructuredLLM():
 
-    os.environ["OPENAI_API_KEY"] = "lm-studio"
+    os.environ["OPENAI_API_KEY"] = ""
     llm = ChatOpenAI(
-        base_url = "http://127.0.0.1:1234/v1",
-        model="local-model",
+        base_url = "",
+        model="",
         temperature=0.0,
         max_tokens=4096
     )
